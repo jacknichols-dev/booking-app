@@ -1,0 +1,82 @@
+
+/*
+
+COLOURS
+
+primary: #66c61a
+pri-light: #94d661
+secondary: #0460ba
+secondary: #0d88cc
+tertiary: #05487f
+tertiary: #116096
+
+GREYSCALE
+
+grey1: #edefef 
+grey2: #a0a8a7
+grey3: #5b5b5b
+grey4: #212121
+
+*/
+
+:root {
+    --primary: #66c61a;
+    --pri-light: #94d661;
+    --secondary: #0460ba;
+    --sec-light: #0d88cc;
+    --tertiary: #05487f;
+    --ter-light: #116096;
+    --grey0: rgb(242, 242, 242);
+    --grey1: #edefef;
+    --grey2: #c9cecd;
+    --grey3: #a19e9e;
+    --grey4: #5e5252;
+    --grey5: #1f1f1f;
+
+    --shadow:  0 2rem 6rem rgba(0,0,0,.3);
+    --shadow1: 0 2rem 5rem rgba(0, 0, 0, .07);
+
+    --line: solid 1px #8e9292;
+    
+}
+
+$bp-largest: 75em;  //1200px
+$bp-large: 68.75em;  //1100px
+$bp-medium: 56.25em;  //900px
+$bp-small: 40em;  //640px
+$bp-smallest: 31.25em;  //500px
+$bp-smaller: 29.70em;  //475px
+$bp-smaller: 26.87em;  //430px
+
+* {
+    padding: 0;
+    margin: 0; 
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: 'Red Hat Display', sans-serif;
+    line-height: 1.6;
+    background-image: linear-gradient(
+        to right bottom,
+        var(--sec-light), var(--secondary));
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
